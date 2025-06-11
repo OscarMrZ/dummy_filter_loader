@@ -1,0 +1,12 @@
+dummy_filter_loader:
+  ros__parameters:
+    sensor_filter_chain:
+      filter1:
+        name: gravity_compensation
+        type: control_filters/GravityCompensationWrench
+        params:
+          sensor_frame: arm_right_ft_sensor_link
+          world_frame: base_footprint
+          tool:
+            CoG: [2.0, 3.0, 4.0]
+            mass: 10.0
